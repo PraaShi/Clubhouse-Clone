@@ -6,7 +6,6 @@ import styled from "styled-components";
 export default function RootLayout() {
   return (
     <Root>
-        
       <div>
         <Outlet />
       </div>

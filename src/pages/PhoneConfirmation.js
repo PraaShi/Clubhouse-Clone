@@ -43,7 +43,7 @@ const Phone = styled.div`
     background-color: #f2f0e4;
     position: relative;
     h1{
-        font-size: 1.em;
+        font-size: 1.3em;
         font-weight: 500;
         font-style: normal;
         margin-bottom: 0;
@@ -68,7 +68,7 @@ const Phone = styled.div`
         align-items: center;
         background-color: var(--btnBgColor);
         color:#ffff;
-        border-radius: 0.5em;
+        border-radius: 1.5em;
         padding:0.5em 1.5em;
         font-size:1.2em;
         font-weight:500;
