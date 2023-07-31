@@ -13,7 +13,7 @@ export default function Welcome() {
             <p>Paul,Rohan & the Clubhouse team</p>
         </Welc>
         <Btnuser>
-          <Link to = '/invite'>button</Link>
+          <Link to = '/invite'>Get Your username </Link>
           <Link>Have a invite text? Sign in</Link>
         </Btnuser>
     </Wel>
@@ -21,7 +21,7 @@ export default function Welcome() {
 }
 
 const Wel = styled.div`
-  width: 100%;
+    width: 100vw;
     padding: 3em 1.5em;
     display:flex;
     flex-direction:column;
@@ -61,6 +61,15 @@ const Btnuser = styled.div`
       font-size:0.87em;
       font-weight: 400;
       font-style: normal;
+    }
+    a:first-child{
+      border-radius: 1.5em;
+      padding:0.5em 1.5em;
+      color: #ffff;
+      font-style: normal;
+      border: 20px;
+      background-color: var(--btnBgColor);
+      
     }
 `;
 

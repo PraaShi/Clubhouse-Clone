@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router'
-import Welcome from './Welcome'
+// import Welcome from './Welcome'
 import styled from "styled-components";
 
 export default function RootLayout() {

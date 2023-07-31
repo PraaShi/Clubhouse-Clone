@@ -10,7 +10,7 @@ const PhoneConfirmation = () => {
             <Link to="/">
                 <img src="/images/arrow.png"></img>
             </Link>
-            <h1>Enter your Phone</h1>
+            <h1>Enter your Phone#</h1>
             <PhoneInput 
                 international defaultCountry="US" 
                 value ={value} 

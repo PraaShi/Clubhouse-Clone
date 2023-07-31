@@ -1,9 +1,12 @@
 import React from "react";
+import styled from "styled-components"
 
 export default function AppLayout() {
   return (
-    <div>
-      
-    </div>
+    <App>
+      children
+    </App>
   )
 }
+
+const App = styled.div``;

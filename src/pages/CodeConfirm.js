@@ -11,7 +11,7 @@ const CodeConfirm = () => {
         <h1>Enter the code we just texted you</h1>
         <input type="text" />
         <p>Didn't receive it?<span>Tap to resend</span></p>
-        <Link to ='/allow-notification' >
+        <Link to ='/allow_notification' >
         Next<img src="/images/nextArrowIcon.svg" alt="" />
         </Link>
         </Phone>
