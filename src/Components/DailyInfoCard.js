@@ -55,6 +55,12 @@ const Daily= styled.div`
     p{
         font-size: 0.875em;
         font-weight: 500;
-        /* line-height:1; */
+        line-height:1;
+        margin:0;
+        display:inline-block;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        width:195px;
     }
 `;

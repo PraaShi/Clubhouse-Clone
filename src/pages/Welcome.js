@@ -29,6 +29,7 @@ const Wel = styled.div`
     align-items:flex-start;
     height:100vh;
     background-color: #f2f0e4;
+    max-width: 500px;
     h1{
       font-size:1.7em;
       font-weight:500;

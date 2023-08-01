@@ -36,6 +36,7 @@ const Head= styled.div`
     justify-content: space-between;
     padding: 0.5em 1em;
     position: absolute;
+    z-index: 1;
     top:0;
     left: 0;
     right: 0;
