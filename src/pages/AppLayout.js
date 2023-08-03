@@ -9,4 +9,6 @@ export default function AppLayout() {
   )
 }
 
-const App = styled.div``;
+const App = styled.div`
+
+`;

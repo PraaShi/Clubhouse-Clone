@@ -43,6 +43,9 @@ export default function RoomInfoCard() {
 }
 
 const Room = styled.div`
+    /* display:none; */
+    /* position: relative; */
+    /* z-index: 0; */
     & > div{
     background-color: #ffffff;
     padding:1em 1em;
