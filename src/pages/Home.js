@@ -6,16 +6,23 @@ import RoomInfoCard from '../Components/RoomInfoCard';
 import {AiOutlinePlus} from "react-icons/ai"
 import { BsGrid3X3Gap } from 'react-icons/bs';
 import data from '../Data/roomCard.json'
+import newRoomData from '../Data/newRoom.json'
 import BottomSheet from '../Components/BottomSheet';
 
 export default function Home() {
-  const [itemsVisible,setItemsVisible] = useState(true);
+  const[itemsVisible,setItemsVisible] = useState(true);
   const[sheetVisible,setSheetVisible] = useState(false);
   const[sheetCreateRoom,setSheetCreateRoom] = useState(false);
   const[loaderVisibility,setLoaderVisibility] = useState(false);
   const[cardId,setCardId] = useState(1);
   return (
+   
     <Hom>
+       { loaderVisibility ? ( 
+      <div className='loaderstyle'> 
+        <img src='/images/loader.gif' />
+      </div>
+    ) : ("")}
       <Header />
       <Footer>
         <DailyInfoCard />
@@ -42,6 +49,12 @@ export default function Home() {
           setLoaderVisibility(false);
           }, 1000);
         }}/>
+      <BottomSheet SheetTitle = 'new room'
+      setSheetVisible={(item) => setSheetVisible(item)}
+      sheetVisible = {sheetCreateRoom}
+      cardDetail = {newRoomData}
+      setItemsVisible={(item) => setItemsVisible(item)} />
+
     </Hom>
   )
 }
@@ -54,6 +67,17 @@ const Hom = styled.div`
   max-width: 500px;
   margin:auto;
   overflow-y: hidden;
+  .loaderstyle{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index: 10;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+  }
 `;
 
 const Footer =styled.div`
@@ -86,7 +110,7 @@ const Btn = styled.div`
     background-color: #28ae61;
     color:#ffffff;
     padding:0.3em 1em;
-    font-size:1.em;
+    font-size:1em;
     font-weight: 400;
     align-items: center;
     position: absolute;

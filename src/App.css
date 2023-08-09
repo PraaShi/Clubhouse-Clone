@@ -1,6 +1,7 @@
 :root{
   --textColor: rgb(65,64,66);
   --btnBgColor: #3287b7;
+  /* max-width: 50vw; */
 }
 
 html{
@@ -12,6 +13,7 @@ body{
   padding: 0;
   font-size: 1em;
   font-family: "Neutrif Pro";
+  /* max-width: 50vw; */
 }
 
 button{
